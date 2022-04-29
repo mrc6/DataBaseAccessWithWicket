@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Wicket - Agenda Eletrônica</title>
+    <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+</head>
+<body>
+<div id="bd">
+  <h2>Login</h2>
+  <p wicket:id="mensagemErroLogin">[mensagem de erro]</p>
+  <form wicket:id="formularioLogin">
+    <input wicket:id="nomeUsuario" type="text" placeholder="Nome" />
+    <br />
+    <input wicket:id="password" type="password" placeholder="Password" />
+    <br />
+    <button type="submit" name="submit">Login</button>
+  </form>
+</div>
+<div id="ft">
+  <div id="whiteText">Marcob&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;2022 </div>
+</div>
+</body>
+</html>

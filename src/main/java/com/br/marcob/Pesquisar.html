@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda Eletrônica</title>
+</head>
+<body>
+<wicket:extend>
+    <h2>Pesquisar Contatos</h2>
+    <form wicket:id="formularioPesquisa">
+        <input type="text" placeholder="Digite um nome" wicket:id="pesquisaNome"/>
+        <button type="submit" wicket:id="botaoPesquisar">Pesquisar</button>
+    </form>
+    <br/>
+    <div wicket:id="divResultados">
+        <table border="1">
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+                <th>Estado Civil</th>
+                <th>Ações</th>
+            </tr>
+            <tr wicket:id="contatos">
+                <td wicket:id="nome">[Nome]</td>
+                <td wicket:id="email">[E-mail]</td>
+                <td wicket:id="telefone">[Telefone]</td>
+                <td wicket:id="estadoCivil">[Estado Civil]</td>
+                <td wicket:id="linkEditar"><a href="#">editar</a></td>
+            </tr>
+        </table>
+    </div>
+</wicket:extend>
+</body>
+</html>

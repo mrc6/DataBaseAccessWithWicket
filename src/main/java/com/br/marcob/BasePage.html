@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Wicket - Agenda Eletrônica</title>
+  <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+</head>
+<body>
+<h1>Wicket - Agenda Eletrônica</h1>
+
+<div id="blocoEsquerdo">
+  <wicket:link>
+    <a href="Inicio.html">Início</a>
+    <br />
+    <a href="Criar.html">Adicionar Contato</a>
+    <br />
+    <a href="Pesquisar.html">Pesquisar Contatos</a>
+  </wicket:link>
+</div>
+
+<div id="bd">
+  <!-- página "filha" vem aqui -->
+  <wicket:child />
+</div>
+
+<div id="ft">
+    <div id="whiteText">Marcob&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;2022 <a href="#" wicket:id="sair" id="sair">Sair</a></div>
+</div>
+</body>
+</html>
